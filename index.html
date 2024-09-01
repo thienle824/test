@@ -1,6 +1,5 @@
 function FindProxyForURL(url, host) {
-    // Check if the URL matches www.google.*
-    if (shExpMatch(host, "*.jetbrains.*")) {
+    if (!shExpMatch(host, "download.jetbrains.com" && shExpMatch(host, "*.jetbrains.*")) {
         return "PROXY http://127.0.0.1:9090";
     }
     
