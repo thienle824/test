@@ -1,5 +1,5 @@
 function FindProxyForURL(url, host) {
-   if (!dnsDomainIs(host, "download.jetbrains.com") && !dnsDomainIs(host, "plugins.jetbrains.com") && !dnsDomainIs(host, "resources.jetbrains.com") && !dnsDomainIs(host, "download-cdn.jetbrains.com") && !dnsDomainIs(host, "www.jetbrains.com") && shExpMatch(host, "*.jetbrains.com")) {
+   if (!dnsDomainIs(host, "download.jetbrains.com") && !dnsDomainIs(host, "plugins.jetbrains.com") && !dnsDomainIs(host, "resources.jetbrains.com") && !dnsDomainIs(host, "download-cdn.jetbrains.com") && !dnsDomainIs(host, "downloads.marketplace.jetbrains.com") && !dnsDomainIs(host, "www.jetbrains.com") && shExpMatch(host, "*.jetbrains.com")) {
         return "PROXY 127.0.0.1:9090";
     }
     return "DIRECT";
