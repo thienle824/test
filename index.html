@@ -1,0 +1,9 @@
+function FindProxyForURL(url, host) {
+    // Check if the URL matches www.google.*
+    if (shExpMatch(host, "*.jetbrains.*")) {
+        return "PROXY http://proxy.com";
+    }
+    
+    // Route all other requests directly
+    return "DIRECT";
+}
