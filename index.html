@@ -1,6 +1,6 @@
 function FindProxyForURL(url, host) {
    if (!dnsDomainIs(host, "download.jetbrains.com") && !dnsDomainIs(host, "plugin.jetbrains.com") && shExpMatch(host, "*.jetbrains.com")) {
-        return "PROXY http://127.0.0.1:9090";
+        return "PROXY 7.8.9.10:8080";
     }
     return "DIRECT";
 }
